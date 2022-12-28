@@ -12,6 +12,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    
     # Azure login
     - uses: actions/checkout@v3
     - uses: azure/login@v1
@@ -31,7 +32,7 @@ jobs:
       with:
         inlineScript: |
            az cdn endpoint purge --content-paths  "/*" --profile-name "aclab-cndprofile-01" --name "aclab-cdn-endpoint-01" --resource-group "aclab-cloud-resume" --no-wait
-           
+
   # Azure logout
     - name: logout
       run: |
