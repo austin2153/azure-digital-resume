@@ -1,8 +1,0 @@
-# create a service principal account 
-az ad sp create-for-rbac \
-    --name AzureResumeACG \
-    --role contributor \
-    --scopes /subscriptions/be637f67-2af9-4b7b-be2f-18da9b2968cb/resourceGroups/aclab-cloud-resume \
-    --sdk-auth
-
-# https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-static-site-github-actions?tabs=userlevel
