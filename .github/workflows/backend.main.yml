@@ -2,7 +2,7 @@ name: deploy_backend
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
     paths:
       - "backend/**"
 
@@ -20,7 +20,7 @@ jobs:
 
     # Login to azure with service principal
     - name: Login to Azure with service principal
-    - uses: azure/login@v1
+      uses: azure/login@v1
       with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
