@@ -10,6 +10,8 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Text;
 
+// test
+
 namespace Company.Function
 {
     public static class GetResumeCounter
