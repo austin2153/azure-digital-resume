@@ -12,16 +12,20 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
+            # Azure login
             - uses: actions/checkout@v3
             - uses: azure/login@v1
               with:
                   creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+            # Upload website to blob storage
             - name: Upload to blob storage
               uses: azure/CLI@v1
               with:
                   inlineScript: |
-                      az storage blob upload-batch --account-name aclabstg01 --auth-mode key -d '$web' -s frontend/ --overwrite
+                      az storage blob upload-batch --account-name aclabstg01 --auth-mode key -d '$web' -s frontend/ --overwrite --auth-mode login
+
+            # Purge CND endpoint with no wait for completion
             - name: Purge CDN endpoint
               uses: azure/CLI@v1
               with:
