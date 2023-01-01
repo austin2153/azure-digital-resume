@@ -1,13 +1,19 @@
 # azure-digital-resume
-- Azure resume using no frontend framework (js,css)
-- Backend api is .NET6
-- Azure CDN
-- HTTPS for site security
-- DNS points to a custom domain
+- Cloud Resume Challenge inspired
+- Frontend built without a framework (js,css)
+- Backend API is written in .NET6
+- Azure Config:
+  - Static website hosted in Storage Account
+  - CDN
+  - HTTPS for site security
+  - DNS points to a custom domain
+  - Cosmos DB backend contains site counter
 
 ## Setup
 - Frontend folder contains the website
 - main.js contains visitor counbter code.
+- Backend contains .net backend
+- iac contains terraform deployment
 
 
 
