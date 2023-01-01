@@ -1,5 +1,5 @@
 # azure-digital-resume
-- Cloud Resume Challenge inspired
+- Cloud Resume Challenge inspired https://cloudresumechallenge.dev/
 - Frontend built without a framework (js,css)
 - Backend API is written in .NET6
 - Azure Config:
