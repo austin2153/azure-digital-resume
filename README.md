@@ -1,6 +1,6 @@
 # azure-digital-resume
-- azure resume using no frontend framework (js,css)
-- backend api is .net6
+- Azure resume using no frontend framework (js,css)
+- backend api is .NET6
 - Azure CDN
 - HTTPS for site security
 - DNS points to a custom domain
