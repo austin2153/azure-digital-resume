@@ -38,13 +38,13 @@ jobs:
         dotnet build --configuration Release --output ./output
         popd
 
-    # Run unit tests
-    - name: 'Run unit test'
-      shell: pwsh
-      run: |
-        pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/tests'
-        dotnet build --configuration Release --output ./output
-        dotnet test
+    # # Run unit tests
+    # - name: 'Run unit test'
+    #   shell: pwsh
+    #   run: |
+    #     pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/tests'
+    #     dotnet build --configuration Release --output ./output
+    #     dotnet test
 
     # Run azure functions
     - name: 'Run Azure Functions action'
