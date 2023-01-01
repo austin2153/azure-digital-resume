@@ -11,9 +11,10 @@
 
 ## Setup
 - Frontend folder contains the website
-- main.js contains visitor counbter code.
+- main.js contains visitor counter code.
 - Backend contains .net backend
 - iac contains terraform deployment
+- github actions used to update frontend, backend and terraform
 
 
 
